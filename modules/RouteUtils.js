@@ -10,17 +10,17 @@ export function isReactChildren(object) {
 }
 
 function checkPropTypes(componentName, propTypes, props) {
-  componentName = componentName || 'UnknownComponent'
+  // componentName = componentName || 'UnknownComponent'
 
-  for (const propName in propTypes) {
-    if (propTypes.hasOwnProperty(propName)) {
-      const error = propTypes[propName](props, propName, componentName)
+  // for (const propName in propTypes) {
+  //   if (propTypes.hasOwnProperty(propName)) {
+  //     const error = propTypes[propName](props, propName, componentName)
 
-      /* istanbul ignore if: error logging */
-      if (error instanceof Error)
-        warning(false, error.message)
-    }
-  }
+  //     /* istanbul ignore if: error logging */
+  //     if (error instanceof Error)
+  //       warning(false, error.message)
+  //   }
+  // }
 }
 
 function createRoute(defaultProps, props) {
